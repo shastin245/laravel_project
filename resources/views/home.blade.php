@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="{{asset('/public/BS5/bootstrap.min.css')}}" rel="stylesheet">
     <title>HOME Page</title>
+    <script type="text/javascrip" scr="{{asset('/public/bs5/bootstrap.bundle.min.js')}}"></script>
 </head>
 
 <body>
@@ -33,13 +34,13 @@
     <div id="carouselExampleFade" class="carousel slide carousel-fade">
         <div class="carousel-inner">
             <div class="carousel-item active">
-                <img src="..." class="d-block w-100" alt="...">
+                <img src="{{asset('/public/img/habi1.jpeg')}}" class="d-block w-100" alt="...">
             </div>
             <div class="carousel-item">
-                <img src="..." class="d-block w-100" alt="...">
+                <img src="{{asset('/public/img/habi2.jpeg')}}" class="d-block w-100" alt="...">
             </div>
             <div class="carousel-item">
-                <img src="..." class="d-block w-100" alt="...">
+                <img src="{{asset('/public/img/habi3.jpeg')}}" class="d-block w-100" alt="...">
             </div>
         </div>
         <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
