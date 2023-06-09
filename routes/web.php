@@ -6,6 +6,8 @@ use App\Http\Controllers\RoomController;
 use App\Http\Controllers\CustomerController;
 use App\Http\Controllers\AdminController;
 
+use App\Http\Controllers\HomeController;
+
 
 
 /*
@@ -19,9 +21,7 @@ use App\Http\Controllers\AdminController;
 |
 */
 
-Route::get('/', function () {
-    return view('home');
-});
+Route::get('/', [HomeController::class, 'home']);
 
 // Admin Login //
 Route::get('admin/login',[AdminController::class,'login']);
