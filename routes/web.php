@@ -5,8 +5,7 @@ use App\Http\Controllers\RoomtypeController;
 use App\Http\Controllers\RoomController;
 use App\Http\Controllers\CustomerController;
 use App\Http\Controllers\AdminController;
-
-
+use App\Http\Controllers\BookingController;
 
 /*
 |--------------------------------------------------------------------------
@@ -38,13 +37,18 @@ Route::get('admin', function (){
 Route::get('admin/roomtype/{id}/delete',[RoomtypeController::class,'destroy']);
 Route::resource('admin/roomtype',RoomtypeController::class);
 
-// Room
+// Room Routes
 Route::get('admin/rooms/{id}/delete',[RoomController::class,'destroy']);
 Route::resource('admin/rooms',RoomController::class);
 
-// Customer
+// Customer Routes
 Route::get('admin/customer/{id}/delete',[CustomerController::class,'destroy']);
 Route::resource('admin/customer',CustomerController::class); 
 
-// Delete Image - RoomType
+// Delete Image - RoomType Route
 Route::get('admin/roomtypeimage/delete/{id}',[RoomtypeController::class,'destroy_image']);
+
+// Booking Routes 
+Route::get('admin/booking/{id}/delete',[BookingController::class,'destroy']);
+Route::get('admin/booking/available-rooms/{checkin_date}',[BookingController::class,'available_rooms']);
+Route::resource('admin/booking',BookingController::class);
