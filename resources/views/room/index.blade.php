@@ -20,16 +20,16 @@
                 <thead>
                     <tr>
                         <th>#</th>
-                        <th>Room Type</th>
                         <th>Tittle</th>
+                        <th>Room Type</th>
                         <th>Action</th>
                     </tr>
                 </thead>
                 <tfoot>
                     <tr>
                         <th>#</th>
-                        <th>Room Type</th>
                         <th>Tittle</th>
+                        <th>Room Type</th>
                         <th>Action</th>
                     </tr>
                 </tfoot>

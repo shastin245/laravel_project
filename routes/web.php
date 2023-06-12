@@ -52,3 +52,8 @@ Route::get('admin/roomtypeimage/delete/{id}',[RoomtypeController::class,'destroy
 Route::get('admin/booking/{id}/delete',[BookingController::class,'destroy']);
 Route::get('admin/booking/available-rooms/{checkin_date}',[BookingController::class,'available_rooms']);
 Route::resource('admin/booking',BookingController::class);
+
+//Customer Login and Register; also Logout
+Route::get('login',[CustomerController::class,'login']);
+Route::get('register',[CustomerController::class,'register']);
+
