@@ -39,8 +39,8 @@
                 <td><input name="password" type="password" class="form-control" /></td>
             </tr>
             <tr>
-                <th>Phone with Country Code<span class="text-danger">*</span></th>
-                <td><input name="mobile" type="text" class="form-control" placeholder="+000 xxxxxxx"/></td>
+                <th>Mobile with area code (0)<span class="text-danger">*</span></th>
+                <td><input name="mobile" type="text" class="form-control" /></td>
             </tr>
             <tr>
                 <th>Photo</th>
@@ -59,5 +59,6 @@
 
 </div>
 <!-- /.container-fluid -->
+   
 
 @endsection

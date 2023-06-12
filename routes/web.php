@@ -5,7 +5,10 @@ use App\Http\Controllers\RoomtypeController;
 use App\Http\Controllers\RoomController;
 use App\Http\Controllers\CustomerController;
 use App\Http\Controllers\AdminController;
-use App\Http\Controllers\BookingController;
+
+use App\Http\Controllers\HomeController;
+
+
 
 /*
 |--------------------------------------------------------------------------
@@ -18,9 +21,7 @@ use App\Http\Controllers\BookingController;
 |
 */
 
-Route::get('/', function () {
-    return view('home');
-});
+Route::get('/', [HomeController::class, 'home']);
 
 // Admin Login //
 Route::get('admin/login',[AdminController::class,'login']);
@@ -37,18 +38,17 @@ Route::get('admin', function (){
 Route::get('admin/roomtype/{id}/delete',[RoomtypeController::class,'destroy']);
 Route::resource('admin/roomtype',RoomtypeController::class);
 
-// Room Routes
+// Room
 Route::get('admin/rooms/{id}/delete',[RoomController::class,'destroy']);
 Route::resource('admin/rooms',RoomController::class);
 
-// Customer Routes
+// Customer
 Route::get('admin/customer/{id}/delete',[CustomerController::class,'destroy']);
 Route::resource('admin/customer',CustomerController::class); 
 
-// Delete Image - RoomType Route
+// Delete Image - RoomType
 Route::get('admin/roomtypeimage/delete/{id}',[RoomtypeController::class,'destroy_image']);
 
-// Booking Routes 
-Route::get('admin/booking/{id}/delete',[BookingController::class,'destroy']);
-Route::get('admin/booking/available-rooms/{checkin_date}',[BookingController::class,'available_rooms']);
-Route::resource('admin/booking',BookingController::class);
+Route::get('login',[CustomerController::class,'login']);
+Route::get('register',[CustomerController::class,'register']);
+
