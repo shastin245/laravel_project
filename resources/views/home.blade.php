@@ -22,6 +22,7 @@
                     <a class="nav-link" aria-current="page" href="#">Home</a>
                     <a class="nav-link" href="#">Services</a>
                     <a class="nav-link" href="#">About</a>
+                    <a class="nav-link" href="{{url('contact')}}">Contact us</a>
                     <a class="nav-link btn btn-sm btn-danger" href="#">Booking</a>
 
                 </div>

@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\ContactController;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\RoomtypeController;
 use App\Http\Controllers\RoomController;
@@ -48,3 +49,6 @@ Route::resource('admin/customer',CustomerController::class);
 
 // Delete Image - RoomType
 Route::get('admin/roomtypeimage/delete/{id}',[RoomtypeController::class,'destroy_image']);
+
+Route::get('contact', [ContactController::class,'contact']);
+Route::post('send-contact-info',[ContactController::class,'sendEmail']);
