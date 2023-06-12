@@ -10,7 +10,7 @@
 </head>
 
 <body>
-<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
         <div class="container">
             <a class="navbar-brand" href="#">Hotel Donde Pilo</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="
@@ -23,7 +23,7 @@
                 <div class="navbar-nav ms-auto">
                     <a class="nav-link" aria-current="page" href="#">Services</a>
                     <a class="nav-link" href="#">Gallery</a>
-                    <a class="nav-link" href="#">Booking</a>
+                    <a class="nav-link" href="{{url('booking')}}">Booking</a>
                     <a class="nav-link" href="#">Contact</a>
                     <a class="nav-link" href="{{url('register')}}">Register</a>
                     <a class="nav-link btn btn-sm btn-danger" href="{{url('login')}}">Login</a>

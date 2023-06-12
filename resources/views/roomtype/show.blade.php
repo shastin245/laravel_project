@@ -29,7 +29,7 @@
           <tr>
             <th>Room Images</th>
             <td>
-              <table class="table table-bordered">
+              <table class="table table-bordered mt-3">
                 <tr>
                   @foreach($rtype->roomtypeimgs as $img)
                   <td>

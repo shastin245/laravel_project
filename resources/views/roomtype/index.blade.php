@@ -20,7 +20,7 @@
                 <thead>
                     <tr>
                         <th>#</th>
-                        <th>Tittle</th>
+                        <th>Title</th>
                         <th>Price  $  </th>
                         <th>Action</th>
                     </tr>
