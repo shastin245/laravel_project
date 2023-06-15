@@ -20,10 +20,15 @@
                     <div class="navbar-nav ms-auto">
                         <a class="nav-link" aria-current="page" href="#">Services</a>
                         <a class="nav-link" href="#">Gallery</a>
-                        <a class="nav-link" href="{{url('booking')}}">Booking</a>
-                        <a class="nav-link" href="#">Contact</a>
+                        @if(Session::has('customerlogin'))
+                        <a class="nav-link" href="{{url('logout')}}">Logout</a>
+                        @else
+                        <a class="nav-link" href="{{url('login')}}">Login</a>
                         <a class="nav-link" href="{{url('register')}}">Register</a>
-                        <a class="nav-link btn btn-sm btn-danger" href="{{url('login')}}">Login</a>
+                        <a class="nav-link" href="#">Contact</a>
+                        @endif
+
+                        <a class="nav-link btn btn-sm btn-danger" href="#">Booking</a>
                     </div>
                 </div>
             </div>

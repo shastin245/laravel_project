@@ -137,7 +137,7 @@ class CustomerController extends Controller
     // Login
     function login()
     {
-        return view('login');
+        return view('frontlogin');
     }
 
     // Check Login

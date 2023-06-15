@@ -1,18 +1,13 @@
 @extends('frontlayout')
 @section ('content')
 <div class="container my-4">
-    <h3 class="mb-3">Register</h3>
-    @if(Session::has('success'))
-    <p class="text-success">{{session('success')}}</p>
+    <h3 class="mb-3">Login</h3>
+    @if(Session::has('error'))
+    <p class="text-danger">{{session('error')}}</p>
     @endif
-    <form method="post" action="{{url('admin/customer')}}">
+    <form method="post" action="{{url('customer/login')}}">
         @csrf
         <table class="table table-bordered">
-
-            <tr>
-                <th>Full Name<span class="text-danger">*</span></th>
-                <td><input required type="text" class="form-control" name="full_name"></td>
-            </tr>
 
             <tr>
                 <th>Email<span class="text-danger">*</span></th>
@@ -25,12 +20,6 @@
             </tr>
 
             <tr>
-                <th>Mobile<span class="text-danger">*</span></th>
-                <td><input required type="number" class="form-control" name="mobile"></td>
-            </tr>
-
-            <tr>
-                <input type="hidden" name="ref" value="front"/>
                 <td colspan="2"><input type="submit" class="btn btn-primary" /></td>
             </tr>
 
