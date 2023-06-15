@@ -7,6 +7,8 @@ use App\Http\Controllers\CustomerController;
 use App\Http\Controllers\AdminController;
 use App\Http\Controllers\BookingController;
 
+use App\Http\Controllers\HomeController;
+
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -18,9 +20,7 @@ use App\Http\Controllers\BookingController;
 |
 */
 
-Route::get('/', function () {
-    return view('home');
-});
+Route::get('/', [HomeController::class, 'home']);
 
 // Admin Login //
 Route::get('admin/login',[AdminController::class,'login']);

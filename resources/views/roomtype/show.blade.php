@@ -31,7 +31,7 @@
             <td>
               <table class="table table-bordered mt-3">
                 <tr>
-                  @foreach($rtype->roomtypeimgs as $img)
+                @foreach($data->roomtypeimgs as $img)
                   <td>
                     <img width="150" src="{{asset('storage/app/'.$img->img_src)}}" />
                   </td>

@@ -2,7 +2,7 @@
 @section ('content')
 <div class="container my-4">
     <h3 class="mb-3">Register</h3>
-    <form method="post" action="{{url('admin/customer)}}">
+    <form method="post" action="{{url('admin/customer')}}">
         @csrf
         <table class="table table-bordered">
 

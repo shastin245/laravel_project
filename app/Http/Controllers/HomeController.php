@@ -8,9 +8,9 @@ use App\Models\Roomtypeimage;
 
 class HomeController extends Controller
 {
-    //Home Page
+    // Home Page
     function home(){
         $roomTypes=RoomType::all();
-        return View('home', ['roomTypes'=>$roomTypes]);
+        return View('home',['roomTypes'=>$roomTypes]);
     }
 }
