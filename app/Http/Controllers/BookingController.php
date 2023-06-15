@@ -118,4 +118,9 @@ class BookingController extends Controller
 
         return response()->json(['data'=>$data]);
     }
+
+    public function front_booking()
+    {
+        return view('front-booking');
+    }
 }

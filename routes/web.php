@@ -59,3 +59,5 @@ Route::post('customer/login',[CustomerController::class,'customer_login']);
 Route::get('register',[CustomerController::class,'register']);
 Route::get('logout',[CustomerController::class,'logout']);
 
+Route::get('booking',[BookingController::class,'front_booking']);
+
