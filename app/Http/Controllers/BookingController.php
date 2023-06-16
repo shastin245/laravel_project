@@ -57,7 +57,11 @@ class BookingController extends Controller
         $data->total_adults=$request->total_adults;
         $data->total_children=$request->total_children;
         $data->save();
-        return redirect('admin/booking/create')->with('success','Data has been added.');
+
+        if($request->ref=='front'){
+            return redirect('booking')->with('success','Booking has been created.');
+        }
+        return redirect('booking')->with('success','Booking has been added.');
     }
 
     /**
